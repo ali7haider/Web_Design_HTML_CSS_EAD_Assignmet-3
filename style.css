@@ -44,7 +44,6 @@ ul {
     align-items: center;
     z-index: 100;
     min-height: 65px;
-    max-height: 80px;
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Add very low box shadow */
 
 }
@@ -227,4 +226,106 @@ footer .fotter_main .tag .social_links a
     margin: 0 5px;
     z-index: 10;
     overflow: hidden;
+}
+.mainImgMobile img{
+    display: none;
+}
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo {
+        margin-left: 0; 
+    }
+    .navbarLinksSocial ul {
+        display: none; 
+        position: absolute;
+        top: 100%; 
+        left: 0;
+        width: 100%;
+        background-color: var(--white-color);
+        z-index: 999;
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbarLinksMain ul a{
+        font-size: 10px;
+    }
+    /* .navbarLinksMain ul {
+        display: none; 
+        position: absolute;
+        top: 100%; 
+        left: 0;
+        width: 100%;
+        background-color: var(--white-color);
+        z-index: 999;
+        flex-direction: column;
+        align-items: center;
+    } */
+    .navbarLinksSocial ul.active {
+        display: flex; 
+    }
+    .navbarLinksMain ul.active {
+        display: flex; 
+    }
+    .main{
+        flex-direction: column;
+        
+    }
+    .navbar{
+        height: 100px;
+    }
+    .mainImg img{
+        display: none;
+        height: 80px;
+    }
+    .mainImgMobile{
+        margin: 20px auto;
+        
+    }
+    .mainImgMobile img{
+        display: block;
+        height: 150px;
+        
+    }
+    .navbarLinksMain ul a {
+        margin: 10px;
+    }
+    .content {
+        margin-left: 20px; 
+    }
+    .cardSection .box {
+        grid-template-columns: 1fr; 
+    }
+    footer {
+        display: none; /* Change position to relative */
+    }
+   
+}
+
+@media only screen and (min-width: 769px) {
+    .navbar {
+        flex-direction: row;
+    }
+    .logo {
+        margin-left: 60px; 
+    }
+    .navbarLinksMain ul {
+        display: flex; 
+        position: static;
+        background-color: transparent;
+    }
+    .navbarLinksMain ul a {
+        margin: 20px; 
+    }
+    .content {
+        margin-left: 250px; 
+    }
+    
 }
