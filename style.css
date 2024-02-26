@@ -43,17 +43,20 @@ ul {
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+    min-height: 65px;
     max-height: 80px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Add very low box shadow */
+
 }
 .logo img{
     height: 40px;
-    margin-top: 0px;
+    margin-left: 60px;
+    margin-top: 4px;
+    cursor: pointer;
     /* border: 2px solid red; */
 }
 
-.container {
-    border: 2px solid red;
-}
+
 
 .navbarLinksSocial {
     margin-right: 10px;
@@ -83,5 +86,96 @@ ul {
 }
 
 .navbarLinksSocial ul a {
-    margin: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+
+}
+
+
+.main{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+.content{
+    margin-top: 50px;
+    margin-left:250px ;
+}
+.content h1 {
+    font-weight: bold;
+    font-size: 40px; /* Adjust size as needed */
+    color: #333; /* Change color to suit your design */
+}
+.content h1 span{
+    font-weight:900;
+    font-size: 50px; /* Adjust size as needed */
+}
+.btn-orderNow{
+    margin-top: 30px;
+    display: inline-block;
+    padding: 0.7rem 1.8rem;
+    background: #DA592F;
+    border-radius: 1rem;
+    color: var(--white-color);
+    font-weight: 600;
+    transition: .5s ease;
+}
+.btn-orderNowCard{
+    margin-top: 30px;
+    display: inline-block;
+    padding: 0.7rem 1.8rem;
+    background: var(--black-color);
+    border-radius: 1rem;
+    color: var(--white-color);
+    font-weight: 600;
+    transition: .5s ease;
+}
+
+/* cardSection */
+.cardSection
+{
+    width: 100%;
+    height: 140vh;
+    padding: 60px 0;
+    margin-top:15px;
+}
+.cardSection .box{
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 25px 0;
+}
+.cardSection .box .card{
+    width: 290px;
+    height: 440px;
+    box-shadow: 1px 1px 1px rgba(0.3, 0.3, 0.3, 0.3); /* Add very low box shadow */
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px 20px;
+    background: #ffffff;
+}
+.cardSection .box .card .small_card{
+display: flex;
+flex-flow: column;
+position: absolute;
+margin: 10px 0;
+transform: translateX(-20px);
+transform: 0.3s;
+opacity: 0;
+
+}
+
+.cardSection .box .card .image img{
+    width: 150px;
+}
+.cardSection .box .card .small_card i{
+    width: 45px;
+    height: 45px;
+    border-radius: 5px;
+    font-size: 18px;
+    margin: 2px 0 ;
+    line-height: 40px;
+    border: 2px solid #999999;
+    transition: 0.2s;
 }
